@@ -1,0 +1,21 @@
+BRAINSTORMING.md
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+dist/
+build/
+
+# Environment
+.env
+
+# Data
+data/raw/
+data/processed/
+
+# IDE
+.vscode/
+.idea/

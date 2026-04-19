@@ -19,7 +19,7 @@ def generate_answer(
     query: str,
     retrieved_chunks: list[RetrievedChunk],
     model: str = os.getenv("CLAUDE_MODEL", "claude-sonnet-4-6"),
-    max_tokens: int = 1024,  # TODO: read from MAX_TOKENS env var
+    max_tokens: int = int(os.getenv("MAX_TOKENS", "1024")),
 ) -> str:
     if not retrieved_chunks:
         return NO_RESULTS_MESSAGE

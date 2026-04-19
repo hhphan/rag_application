@@ -14,7 +14,7 @@ def _token_length(text: str) -> int:
 def chunk_text(
     text: str,
     chunk_size: int = 512,
-    chunk_overlap: int = 0,
+    chunk_overlap: int = 50,
 ) -> list[str]:
     splitter = RecursiveCharacterTextSplitter(
         chunk_size=chunk_size,

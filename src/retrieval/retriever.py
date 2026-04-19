@@ -30,7 +30,7 @@ _QUERY = text("""
         d.title,
         dc.chunk_text,
         dc.chunk_index,
-        dc.embedding <=> :embedding::vector AS cosine_distance
+        dc.embedding <=> CAST(:embedding AS vector) AS cosine_distance
     FROM document_chunks dc
     JOIN documents d ON d.id = dc.document_id
     WHERE dc.embedding IS NOT NULL

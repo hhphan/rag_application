@@ -53,7 +53,9 @@ def main() -> None:
         st.title("📚 RAG Research Assistant")
         st.caption("Powered by arXiv + Claude")
         st.divider()
-        # TODO: add clear chat button
+        if st.button("Clear chat"):
+            st.session_state.messages = []
+            st.rerun()
         stats = get_db_stats()
         st.metric("Documents", stats["documents"])
         st.metric("Chunks", stats["chunks"])

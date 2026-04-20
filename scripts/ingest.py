@@ -54,6 +54,7 @@ def run_ingestion(category: str, max_results: int) -> None:
                 published_at=paper["published_at"] if paper["published_at"] else None,
             )
             db.add(doc)
+            db.flush()
 
             full_text = parse_pdf_from_url(paper["pdf_url"])
             if not full_text.strip():

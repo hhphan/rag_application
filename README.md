@@ -43,7 +43,7 @@ An end-to-end Retrieval-Augmented Generation (RAG) pipeline that ingests arXiv r
 
 ```bash
 git clone <repo-url>
-cd rag_pipeline
+cd rag_application
 ```
 
 ### 2. Create and activate a virtual environment

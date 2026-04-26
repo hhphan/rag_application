@@ -1,6 +1,7 @@
 # RAG Pipeline
 
 An end-to-end Retrieval-Augmented Generation (RAG) pipeline that ingests arXiv research papers, stores vector embeddings in PostgreSQL, and exposes a Streamlit GUI for natural-language querying.
+All details about this work can be seen via: https://tronghien.com/blog/building-a-rag-pipeline
 
 ## Architecture
 
